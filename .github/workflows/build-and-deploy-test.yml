@@ -45,6 +45,6 @@ jobs:
         env:
           REPO: self
           BRANCH: deployment
-          FOLDER: dist
+          FOLDER: dist/public
           SQUASH_HISTORY: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
