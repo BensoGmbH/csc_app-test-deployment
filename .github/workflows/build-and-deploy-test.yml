@@ -34,7 +34,7 @@ jobs:
         working-directory: ./client
 
       - name: Build application
-        run: npm run build-test
+        run: npm run build
         working-directory: ./client
 
       - name: Create CNAME File for GH Pages
@@ -48,5 +48,6 @@ jobs:
           FOLDER: dist/public
           SQUASH_HISTORY: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 
